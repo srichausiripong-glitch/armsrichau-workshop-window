@@ -195,7 +195,7 @@ function Index() {
         <div className="wrap">
           <h2 className="h-section" id="impact-h"><span className="en">Ten years of work, in numbers</span><span className="th" lang="th">สิบปีของงาน ในตัวเลข</span></h2>
           <dl className="ledger">
-            <div><dt><span data-count="1" data-prefix="USD " data-suffix="M">USD 1M</span></dt><dd><span className="en">won in grants from proposals written end to end (PEPFAR/EpiC)</span><span className="th" lang="th">ทุนที่ได้จากข้อเสนอโครงการซึ่งเขียนเอง<span className="nw">ทั้งฉบับ</span> (PEPFAR/EpiC)</span></dd></div>
+            <div><dt><span data-count="980" data-prefix="USD " data-suffix="K">USD 980K</span></dt><dd><span className="en">proposal I wrote end to end for a three-organisation consortium, selected by EpiC</span><span className="th" lang="th">ข้อเสนอโครงการที่เขียนเอง<span className="nw">ทั้งฉบับ</span>ให้ภาคี 3 องค์กร และ EpiC คัดเลือก</span></dd></div>
             <div><dt><span data-count="1.4" data-decimals="1" data-suffix="M">1.4M</span></dt><dd><span className="en">sessions on testD, a platform designed and built in-house</span><span className="th" lang="th"><span className="nw">เซสชัน</span>บน testD <span className="nw">แพลตฟอร์ม</span>ที่ออกแบบและสร้างเอง</span></dd></div>
             <div><dt><span data-count="5.5" data-decimals="1" data-suffix="M">5.5M</span></dt><dd><span className="en">people reached across Southeast Asia with brand and influencer partners</span><span className="th" lang="th">คนที่แคมเปญเข้าถึงทั่วอาเซียน ร่วมกับแบรนด์และ<span className="nw">อินฟลูเอนเซอร์</span></span></dd></div>
             <div><dt><span data-count="25" data-prefix="+" data-suffix="%">+25%</span></dt><dd><span className="en">more HIV test bookings after a redesign guided by GA4 data</span><span className="th" lang="th">การจองตรวจ<span className="nw">เอชไอวี</span>ที่เพิ่มขึ้น หลังปรับเว็บตามข้อมูล GA4</span></dd></div>
@@ -604,9 +604,9 @@ function Index() {
             </li>
           </ol>
 
-          <h3 className="h-sub"><span className="en">Funding raised</span><span className="th" lang="th">ทุนที่ระดมได้</span></h3>
-          <p className="inline-facts en">Wrote the proposals behind a <b>USD 1M</b> PEPFAR/EpiC grant and a <b>USD 5,000</b> APCOM grant funded by UNAIDS, brought in about <b>THB 380,000</b> of in-kind CSR support from Maybelline and PepsiCo, and opened public giving for SWING.</p>
-          <p className="inline-facts th" lang="th">เขียนข้อเสนอที่ได้ทุน PEPFAR/EpiC <b>1 ล้านดอลลาร์</b> และทุน APCOM จาก UNAIDS <b>5,000 ดอลลาร์</b> ได้การสนับสนุน CSR จาก Maybelline และ PepsiCo ราว <b>380,000 บาท</b> และเปิดช่องทางบริจาคสาธารณะให้ SWING</p>
+          <h3 className="h-sub"><span className="en">Proposals and funding</span><span className="th" lang="th">ข้อเสนอโครงการและทุน</span></h3>
+          <p className="inline-facts en">Wrote the R2S Consortium's <b>USD 980,000</b> proposal to EpiC on quality improvement in community HIV services, which EpiC selected (RSAT lead, with SWING and Mahidol University), and the proposal for a <b>USD 5,000</b> APCOM grant funded by UNAIDS. Brought in about <b>THB 380,000</b> of in-kind CSR support from Maybelline and PepsiCo, and opened public giving for SWING.</p>
+          <p className="inline-facts th" lang="th">เขียนข้อเสนอโครงการ <b>980,000 ดอลลาร์</b>ของภาคี R2S (RSAT เป็นผู้นำ ร่วมกับ SWING และมหาวิทยาลัยมหิดล) เรื่องการพัฒนาคุณภาพบริการ HIV ในชุมชน ซึ่ง EpiC คัดเลือก และเขียนข้อเสนอทุน APCOM จาก UNAIDS <b>5,000 ดอลลาร์</b> ได้การสนับสนุน CSR จาก Maybelline และ PepsiCo ราว <b>380,000 บาท</b> และเปิดช่องทางบริจาคสาธารณะให้ SWING</p>
           <a className="fund" href="https://taejai.com/th/project/ots-swing-fund" target="_blank" rel="noopener">
             <figure className="fund-img reveal-img"><img src="img/taejai-swing-fund.webp" width="900" height="600" loading="lazy" alt="SWING Fund campaign cover: SWING outreach staff carrying supply bags" /></figure>
             <div className="fund-body">
