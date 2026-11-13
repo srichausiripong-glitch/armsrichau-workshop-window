@@ -14,6 +14,7 @@ import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/
 import { Route as ApplyRouteImport } from './routes/apply'
 import { Route as AuthRouteImport } from './routes/auth'
 import { Route as ResetPasswordRouteImport } from './routes/reset-password'
+import { Route as SabaiCatRouteImport } from './routes/sabai-cat'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as AuthenticatedAccountRouteImport } from './routes/_authenticated/account'
 import { Route as LovableEmailTransactionalPreviewRouteImport } from './routes/lovable/email/transactional/preview'
@@ -42,6 +43,11 @@ const ResetPasswordRoute = ResetPasswordRouteImport.update({
   path: '/reset-password',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SabaiCatRoute = SabaiCatRouteImport.update({
+  id: '/sabai-cat',
+  path: '/sabai-cat',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -64,6 +70,7 @@ export interface FileRoutesByFullPath {
   '/apply': typeof ApplyRoute
   '/auth': typeof AuthRoute
   '/reset-password': typeof ResetPasswordRoute
+  '/sabai-cat': typeof SabaiCatRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/account': typeof AuthenticatedAccountRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -73,6 +80,7 @@ export interface FileRoutesByTo {
   '/apply': typeof ApplyRoute
   '/auth': typeof AuthRoute
   '/reset-password': typeof ResetPasswordRoute
+  '/sabai-cat': typeof SabaiCatRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/account': typeof AuthenticatedAccountRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -84,6 +92,7 @@ export interface FileRoutesById {
   '/apply': typeof ApplyRoute
   '/auth': typeof AuthRoute
   '/reset-password': typeof ResetPasswordRoute
+  '/sabai-cat': typeof SabaiCatRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/_authenticated/account': typeof AuthenticatedAccountRoute
   '/lovable/email/transactional/preview': typeof LovableEmailTransactionalPreviewRoute
@@ -95,6 +104,7 @@ export interface FileRouteTypes {
     | '/apply'
     | '/auth'
     | '/reset-password'
+    | '/sabai-cat'
     | '/sitemap.xml'
     | '/account'
     | '/lovable/email/transactional/preview'
@@ -104,6 +114,7 @@ export interface FileRouteTypes {
     | '/apply'
     | '/auth'
     | '/reset-password'
+    | '/sabai-cat'
     | '/sitemap.xml'
     | '/account'
     | '/lovable/email/transactional/preview'
@@ -114,6 +125,7 @@ export interface FileRouteTypes {
     | '/apply'
     | '/auth'
     | '/reset-password'
+    | '/sabai-cat'
     | '/sitemap.xml'
     | '/_authenticated/account'
     | '/lovable/email/transactional/preview'
@@ -125,6 +137,7 @@ export interface RootRouteChildren {
   ApplyRoute: typeof ApplyRoute
   AuthRoute: typeof AuthRoute
   ResetPasswordRoute: typeof ResetPasswordRoute
+  SabaiCatRoute: typeof SabaiCatRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   LovableEmailTransactionalPreviewRoute: typeof LovableEmailTransactionalPreviewRoute
 }
@@ -164,6 +177,13 @@ declare module '@tanstack/react-router' {
       path: '/reset-password'
       fullPath: '/reset-password'
       preLoaderRoute: typeof ResetPasswordRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sabai-cat': {
+      id: '/sabai-cat'
+      path: '/sabai-cat'
+      fullPath: '/sabai-cat'
+      preLoaderRoute: typeof SabaiCatRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/sitemap.xml': {
@@ -207,6 +227,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApplyRoute: ApplyRoute,
   AuthRoute: AuthRoute,
   ResetPasswordRoute: ResetPasswordRoute,
+  SabaiCatRoute: SabaiCatRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   LovableEmailTransactionalPreviewRoute: LovableEmailTransactionalPreviewRoute,
 }
