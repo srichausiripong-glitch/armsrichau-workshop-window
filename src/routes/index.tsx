@@ -798,6 +798,7 @@ function Index() {
           <footer className="foot">
             <p>© 2026 Siripong Srichau</p>
             <p><span className="en">Photos: UNAIDS, APCOM, SWING Foundation, RSAT, Taejai</span><span className="th" lang="th">ภาพ: UNAIDS, APCOM, มูลนิธิ SWING, RSAT, เทใจ</span></p>
+            <p><a className="link" href="/sabai-cat"><span className="en">Sabai Cat Coloring shop</span><span className="th" lang="th">ร้านสมุดระบายสี Sabai Cat</span></a></p>
           </footer>
         </div>
       </section>
