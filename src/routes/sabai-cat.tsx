@@ -5,12 +5,15 @@ import portfolioCss from "../portfolio.css?url";
 import applyCss from "../apply.css?url";
 import sabaiCss from "../sabai-cat.css?url";
 import { SabaiBook } from "../components/SabaiBook";
-import { BOOKS, SHOP_LINKS } from "../lib/sabai-cat";
+import { SabaiShopLinks } from "../components/SabaiShopLinks";
+import { BOOKS } from "../lib/sabai-cat";
 
 const TITLE = "Sabai Cat Coloring — cozy cat coloring pages";
 const DESCRIPTION =
   "Printable cat coloring books by Arm Srichau: Thai Street Food and Meowody, a Thai soap opera starring cats. Buy on Payhip, Etsy or Gumroad.";
-const OG_IMAGE = "https://armsrichau.com/img/sabai-cat-street-food.webp";
+const PAGE_URL = "https://armsrichau.com/sabai-cat";
+// 1200x630 JPG: the shape link previews expect, and readable by apps that skip webp.
+const OG_IMAGE = "https://armsrichau.com/img/og-sabai-cat.jpg";
 
 // Same pre-paint language pick as the home page; English unless ?lang=th or a saved choice.
 const PRE_PAINT = `(function () {
@@ -35,15 +38,20 @@ export const Route = createFileRoute("/sabai-cat")({
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESCRIPTION },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: PAGE_URL },
       { property: "og:image", content: OG_IMAGE },
       { property: "og:image:width", content: "1200" },
-      { property: "og:image:height", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      {
+        property: "og:image:alt",
+        content: "Covers of the Sabai Cat coloring books Thai Street Food and Meowody",
+      },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: OG_IMAGE },
     ],
     links: [
       { rel: "icon", href: FAVICON },
-      { rel: "canonical", href: "https://armsrichau.com/sabai-cat" },
+      { rel: "canonical", href: PAGE_URL },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -119,22 +127,12 @@ function SabaiCatPage() {
                 สมุดระบายสีลายเส้นหนา ระบายง่าย นำแสดงโดยกะทิ แมวริมทางตัวกลม ออกแบบที่กรุงเทพฯ
               </span>
             </p>
-            <p className="sc-shops">
-              <a className="link" href={SHOP_LINKS.etsy} target="_blank" rel="noopener">
-                Etsy shop <span aria-hidden="true">↗</span>
-              </a>
-              <a className="link" href={SHOP_LINKS.gumroad} target="_blank" rel="noopener">
-                Gumroad shop <span aria-hidden="true">↗</span>
-              </a>
-              <a className="link" href={SHOP_LINKS.pinterest} target="_blank" rel="noopener">
-                Pinterest <span aria-hidden="true">↗</span>
-              </a>
-            </p>
+            <SabaiShopLinks />
           </div>
 
           <div className="sc-books">
-            {BOOKS.map((book) => (
-              <SabaiBook key={book.id} book={book} />
+            {BOOKS.map((book, i) => (
+              <SabaiBook key={book.id} book={book} priority={i === 0} />
             ))}
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { STORE_LABEL, STORE_ORDER, type Book } from "../lib/sabai-cat";
 
-export function SabaiBook({ book }: { book: Book }) {
+// priority: the first book sits near the top of the page, so its cover loads straight away.
+export function SabaiBook({ book, priority = false }: { book: Book; priority?: boolean }) {
   return (
     <article className="sc-book" id={book.id} aria-labelledby={`${book.id}-h`}>
       <figure className="sc-cover">
@@ -8,7 +9,8 @@ export function SabaiBook({ book }: { book: Book }) {
           src={book.cover.src}
           width={book.cover.width}
           height={book.cover.height}
-          loading="lazy"
+          loading={priority ? "eager" : "lazy"}
+          fetchPriority={priority ? "high" : undefined}
           alt={book.cover.altEn}
         />
       </figure>

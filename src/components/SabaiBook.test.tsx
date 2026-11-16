@@ -39,3 +39,15 @@ describe("SabaiBook", () => {
     expect(img).toHaveAttribute("height", "1200");
   });
 });
+
+describe("SabaiBook cover loading", () => {
+  it("loads the cover right away when it is the first book on the page", () => {
+    render(<SabaiBook book={meowody} priority />);
+    expect(screen.getByRole("img")).toHaveAttribute("loading", "eager");
+  });
+
+  it("lazy-loads the cover otherwise", () => {
+    render(<SabaiBook book={meowody} />);
+    expect(screen.getByRole("img")).toHaveAttribute("loading", "lazy");
+  });
+});
