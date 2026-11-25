@@ -5,4 +5,5 @@
 - [x] Register owner notifications with verified waitUntil access or await them for at most four seconds.
 - [x] Use the Thai collector name in the /apply privacy notice.
 - [x] Run notification regression tests and verify the automatic build.
-- [ ] Publish Google site-verification TXT at armsrichau.com root, then confirm it is live in public DNS (user adds the record in the Domains DNS editor).
+- [x] Publish Google site-verification TXT at armsrichau.com root — live in public DNS (verified 25 Nov 2026).
+- [ ] Publish Anthropic domain-verification TXT at armsrichau.com root, then confirm live in public DNS (user adds the record; Lovable hosts the DNS, no other provider).
