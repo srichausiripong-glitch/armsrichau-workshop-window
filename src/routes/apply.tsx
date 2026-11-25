@@ -12,7 +12,7 @@ import { DraftHelper } from "../components/DraftHelper";
 
 const TITLE = "Apply — November open call · Arm Srichau";
 const DESCRIPTION =
-  "Apply for the November open call: three organisations, pay what you can, from THB 0. Applications close 8 November.";
+  "The November open call by Arm Srichau (three organisations, pay what you can) is now closed. Applications closed on 8 November.";
 
 // Same pre-paint language pick as the home page.
 const PRE_PAINT = `(function () {
@@ -213,14 +213,18 @@ function ApplyPage() {
               <span className="en">Apply for the November open call</span>
               <span className="th" lang="th">สมัครรอบพฤศจิกายน</span>
             </h1>
-            <p className="lede en">
-              Three organisations, pay what you can, from THB 0. Apply by 8 November; the three picked will hear back
-              by 15 November.
-            </p>
-            <p className="lede th" lang="th">
-              รับทำงานให้ 3 องค์กร จ่ายตามกำลัง เริ่มที่ 0 บาท สมัครภายใน 8 พฤศจิกายน เลือก 3 ที่และติดต่อกลับภายใน
-              15 พฤศจิกายน
-            </p>
+            {status === "form" && (
+              <>
+                <p className="lede en">
+                  Three organisations, pay what you can, from THB 0. Apply by 8 November; the three picked will hear
+                  back by 15 November.
+                </p>
+                <p className="lede th" lang="th">
+                  รับทำงานให้ 3 องค์กร จ่ายตามกำลัง เริ่มที่ 0 บาท สมัครภายใน 8 พฤศจิกายน เลือก 3 ที่และติดต่อกลับภายใน
+                  15 พฤศจิกายน
+                </p>
+              </>
+            )}
           </div>
 
           {status === "closed" && (
