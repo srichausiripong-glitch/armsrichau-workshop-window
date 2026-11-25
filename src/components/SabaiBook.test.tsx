@@ -51,3 +51,11 @@ describe("SabaiBook cover loading", () => {
     expect(screen.getByRole("img")).toHaveAttribute("loading", "lazy");
   });
 });
+
+describe("SabaiBook paperback note", () => {
+  it("only mentions Amazon when a paperback is on its way", () => {
+    const cafe = BOOKS.find((book) => book.id === "katis-cafe")!;
+    const { container } = render(<SabaiBook book={cafe} />);
+    expect(container.textContent).not.toContain("Amazon");
+  });
+});

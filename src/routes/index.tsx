@@ -410,8 +410,8 @@ function Index() {
             <figure className="as-cover reveal-img"><img src="img/armshares-cover.webp" width="1640" height="720" loading="lazy" alt="ArmShares channel banner: sex, health and gay life, told without judgement" /></figure>
             <div className="as-body">
               <h3 className="h-work">ArmShares</h3>
-              <p className="en">My own short-video channel on sex, health and gay life, told with humour and no judgement. EP.1, “Dating app dictionary”, is out in Thai and English.</p>
-              <p className="th" lang="th">ช่องวิดีโอสั้นของตัวเอง เล่าเรื่องเพศ สุขภาพ และชีวิตเกย์ แบบสนุกและไม่ตัดสิน EP.1 “พจนานุกรมแอปหาคู่” มีทั้งเวอร์ชันไทยและอังกฤษ</p>
+              <p className="en">My own video channel on sex, health and gay life, told with humour and no judgement. More than 30 short episodes so far on PrEP and PEP, HIV testing, mpox rumour checks and staying safe online, plus a two-part long-form story on mpox.</p>
+              <p className="th" lang="th">ช่องวิดีโอของตัวเอง เล่าเรื่องเพศ สุขภาพ และชีวิตเกย์ แบบสนุกและไม่ตัดสิน ตอนนี้มีคลิปสั้นกว่า 30 ตอน ทั้งเรื่อง PrEP และ PEP การตรวจ HIV เช็กข่าวลือ mpox และการดูแลตัวเองให้ปลอดภัยบนโลกออนไลน์ และมีคลิปยาวเล่าเรื่อง mpox 2 ตอน</p>
               <p className="role"><b className="en">My part</b><b className="th" lang="th">บทบาท</b> <span className="en">Script, shoot, edit, motion graphics and brand kit</span><span className="th" lang="th">เขียนบท ถ่าย ตัดต่อ ทำโมชันกราฟิก และชุดแบรนด์</span></p>
               <a className="link" href="https://www.tiktok.com/@armshares" target="_blank" rel="noopener">TikTok @armshares <span aria-hidden="true">↗</span></a>
             </div>
@@ -466,6 +466,15 @@ function Index() {
             </div>
           </header>
           <ol className="timeline">
+            <li>
+              <p className="t-when"><span className="en">2026–now</span><span className="th" lang="th">2569–ปัจจุบัน</span></p>
+              <div className="t-body">
+                <h3>Project Officer</h3>
+                <p className="t-org">RIMES <span className="en">(Regional Integrated Multi-Hazard Early Warning System for Africa and Asia)</span><span className="th" lang="th">(ระบบเตือนภัยล่วงหน้าหลายภัยพิบัติระดับภูมิภาคสำหรับแอฟริกาและเอเชีย)</span></p>
+                <p className="en">Supports the SOFF projects in the Maldives and Timor-Leste, which strengthen weather and climate observations, and capacity building on impact-based forecasting under an ESCAP-funded project.</p>
+                <p className="th" lang="th">ทำงานสนับสนุนโครงการ SOFF ในมัลดีฟส์และติมอร์-เลสเต ซึ่งพัฒนาระบบตรวจวัดสภาพอากาศและภูมิอากาศ และงานพัฒนาศักยภาพด้านการพยากรณ์ตามผลกระทบ (impact-based forecasting) ในโครงการที่ได้รับทุนจาก ESCAP</p>
+              </div>
+            </li>
             <li>
               <p className="t-when">2025–2026</p>
               <div className="t-body">

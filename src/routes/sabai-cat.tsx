@@ -5,12 +5,13 @@ import portfolioCss from "../portfolio.css?url";
 import applyCss from "../apply.css?url";
 import sabaiCss from "../sabai-cat.css?url";
 import { SabaiBook } from "../components/SabaiBook";
+import { SabaiFreePages } from "../components/SabaiFreePages";
 import { SabaiShopLinks } from "../components/SabaiShopLinks";
 import { BOOKS } from "../lib/sabai-cat";
 
 const TITLE = "Sabai Cat Coloring — cozy cat coloring pages";
 const DESCRIPTION =
-  "Printable cat coloring books by Arm Srichau: Thai Street Food and Meowody, a Thai soap opera starring cats. Buy on Payhip, Etsy or Gumroad.";
+  "Printable cat coloring books and a Thai-English kids' game by Arm Srichau, starring Kati the Thai street cat. Thai Street Food, Meowody, Kati's Café, A Tropical Thai Christmas and more on Payhip, Etsy or Gumroad.";
 const PAGE_URL = "https://armsrichau.com/sabai-cat";
 // 1200x630 JPG: the shape link previews expect, and readable by apps that skip webp.
 const OG_IMAGE = "https://armsrichau.com/img/og-sabai-cat.jpg";
@@ -135,6 +136,8 @@ function SabaiCatPage() {
               <SabaiBook key={book.id} book={book} priority={i === 0} />
             ))}
           </div>
+
+          <SabaiFreePages />
         </div>
       </main>
     </div>

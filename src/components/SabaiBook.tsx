@@ -66,12 +66,14 @@ export function SabaiBook({ book, priority = false }: { book: Book; priority?: b
           ))}
         </ul>
 
-        <p className="sc-paperback">
-          <span className="en">Paperback coming soon on Amazon</span>
-          <span className="th" lang="th">
-            เล่มกระดาษ เร็ว ๆ นี้บน Amazon
-          </span>
-        </p>
+        {book.paperbackSoon && (
+          <p className="sc-paperback">
+            <span className="en">Paperback coming soon on Amazon</span>
+            <span className="th" lang="th">
+              เล่มกระดาษ เร็ว ๆ นี้บน Amazon
+            </span>
+          </p>
+        )}
         <p className="sc-small">
           <span className="en">
             Printable PDF in US Letter and A4, instant download; no physical book is shipped. For
