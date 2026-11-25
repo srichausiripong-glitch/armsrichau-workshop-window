@@ -28,4 +28,11 @@ describe("Home page, November 2026 update", () => {
     expect(armshares.textContent).toContain("mpox");
     expect(armshares.textContent).not.toContain("is out in Thai and English");
   });
+
+  it("no longer says Arm is open to new roles", () => {
+    const page = renderHome();
+    expect(page.querySelector(".status")).toBeNull();
+    expect(page.textContent).not.toContain("Open to");
+    expect(page.textContent).not.toContain("เปิดรับงาน");
+  });
 });

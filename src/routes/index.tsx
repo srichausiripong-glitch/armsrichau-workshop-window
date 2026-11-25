@@ -152,7 +152,6 @@ function Index() {
             <button className="btn btn-accent" type="button" data-request="cv">
               <span className="en">Request CV</span><span className="th" lang="th">ขอดู CV</span>
             </button>
-            <p className="status"><span className="status-dot" aria-hidden="true"></span><span className="en">Open to communication, digital and partnership roles</span><span className="th" lang="th">เปิดรับงานด้านสื่อสาร ดิจิทัล และพันธมิตร</span></p>
           </div>
         </div>
 
@@ -707,10 +706,10 @@ function Index() {
           <h2 className="contact-h" id="contact-h"><span className="en">Let’s work together.</span><span className="th" lang="th">มาทำงานด้วยกัน</span></h2>
           <div className="contact-grid">
             <div>
-              <p className="contact-lede en">Open to roles where communication, digital tools and partnerships meet health, rights or social impact. Based in Bangkok, happy to work across the region.</p>
-              <p className="contact-lede th" lang="th">เปิดรับงานที่การสื่อสาร เครื่องมือดิจิทัล และงานพันธมิตร มาเจอกับงานสุขภาพ สิทธิ หรือผลกระทบทางสังคม อยู่<span className="nw">กรุงเทพฯ</span> และพร้อมทำงานทั่วภูมิภาค</p>
+              <p className="contact-lede en">Happy to talk about collaborations where communication, digital tools and partnerships meet health, rights or social impact. Based in Bangkok.</p>
+              <p className="contact-lede th" lang="th">ยินดีคุยเรื่องงานร่วมมือ ที่การสื่อสาร เครื่องมือดิจิทัล และงานพันธมิตร มาเจอกับงานสุขภาพ สิทธิ หรือผลกระทบทางสังคม อยู่<span className="nw">กรุงเทพฯ</span></p>
               <ul className="roles">
-                <li><span className="en">Communications and campaigns lead</span><span className="th" lang="th">หัวหน้างานสื่อสารและแคมเปญ</span></li>
+                <li><span className="en">Communications and campaigns</span><span className="th" lang="th">งานสื่อสารและแคมเปญ</span></li>
                 <li><span className="en">Digital and AI for social impact</span><span className="th" lang="th">ดิจิทัลและ AI เพื่อสังคม</span></li>
                 <li><span className="en">Partnerships and fundraising</span><span className="th" lang="th">พันธมิตรและระดมทุน</span></li>
                 <li><span className="en">Learning and training design</span><span className="th" lang="th">ออกแบบการเรียนรู้และการอบรม</span></li>
