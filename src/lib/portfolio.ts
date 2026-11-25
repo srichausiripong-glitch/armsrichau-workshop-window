@@ -96,7 +96,7 @@ export async function initPortfolio() {
   });
 
   /* ---------- Request CV / collaboration ---------- */
-  const EMAIL = 'srichausiripong@gmail.com';
+  const EMAIL = 'srichausiripong@armsrichau.com';
   const drafts = {
     cv: {
       en: { subject: 'CV request', body: 'Hi Arm,\n\nI’m [your name] from [organisation]. We’re hiring for [role] and would like to see your CV and portfolio.\n\nThanks,\n[your name]' },

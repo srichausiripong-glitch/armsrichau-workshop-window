@@ -586,7 +586,7 @@ function ApplyPage() {
                       <span className="th" lang="th">
                         มีการส่งใบสมัครมากเกินไปในขณะนี้ กรุณารอประมาณ 1 ชั่วโมงแล้วลองใหม่ หรือส่งอีเมลไปที่ 
                       </span>
-                      <a href="mailto:srichausiripong@gmail.com">srichausiripong@gmail.com</a>
+                      <a href="mailto:srichausiripong@armsrichau.com">srichausiripong@armsrichau.com</a>
                     </>
                   ) : (
                     <>
@@ -616,8 +616,8 @@ function ApplyPage() {
                   )}
                 </button>
                 <p className="apply-privacy">
-                  <span className="en">Siripong Srichau (srichausiripong@gmail.com) collects your answers and contact details to choose the three organisations for this round and contact them. A technical IP log is kept for up to one hour to prevent spam. Applications that are not picked will be deleted by 31 January 2027. You can ask to see or delete your data by emailing <a href="mailto:srichausiripong@gmail.com">srichausiripong@gmail.com</a>.</span>
-                  <span className="th" lang="th">ศิริพงษ์ ศรีเชื้อ (srichausiripong@gmail.com) เก็บคำตอบและข้อมูลติดต่อเพื่อคัดเลือก 3 องค์กรในรอบนี้และติดต่อกลับ โดยเก็บบันทึก IP ทางเทคนิคไว้ไม่เกิน 1 ชั่วโมงเพื่อป้องกันสแปม ใบสมัครที่ไม่ได้รับเลือกจะถูกลบภายใน 31 มกราคม 2570 สามารถขอดูหรือลบข้อมูลได้โดยส่งอีเมลไปที่ <a href="mailto:srichausiripong@gmail.com">srichausiripong@gmail.com</a></span>
+                  <span className="en">Siripong Srichau (srichausiripong@armsrichau.com) collects your answers and contact details to choose the three organisations for this round and contact them. A technical IP log is kept for up to one hour to prevent spam. Applications that are not picked will be deleted by 31 January 2027. You can ask to see or delete your data by emailing <a href="mailto:srichausiripong@armsrichau.com">srichausiripong@armsrichau.com</a>.</span>
+                  <span className="th" lang="th">ศิริพงษ์ ศรีเชื้อ (srichausiripong@armsrichau.com) เก็บคำตอบและข้อมูลติดต่อเพื่อคัดเลือก 3 องค์กรในรอบนี้และติดต่อกลับ โดยเก็บบันทึก IP ทางเทคนิคไว้ไม่เกิน 1 ชั่วโมงเพื่อป้องกันสแปม ใบสมัครที่ไม่ได้รับเลือกจะถูกลบภายใน 31 มกราคม 2570 สามารถขอดูหรือลบข้อมูลได้โดยส่งอีเมลไปที่ <a href="mailto:srichausiripong@armsrichau.com">srichausiripong@armsrichau.com</a></span>
                 </p>
               </div>
             </form>

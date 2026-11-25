@@ -40,7 +40,7 @@ const PERSON = {
   alternateName: ["Arm Srichau", "ศิริพงษ์ ศรีเชื้อ"],
   jobTitle: "Communication, Digital Innovation and Partnerships Lead",
   address: { "@type": "PostalAddress", addressLocality: "Bangkok", addressCountry: "TH" },
-  email: "mailto:srichausiripong@gmail.com",
+  email: "mailto:srichausiripong@armsrichau.com",
   sameAs: ["https://www.linkedin.com/in/siripong-srichau-7107b5147"],
   alumniOf: "Chulalongkorn University",
   knowsLanguage: ["th", "en"],
@@ -716,9 +716,9 @@ function Index() {
               </ul>
             </div>
             <div className="contact-actions">
-              <a className="mail" href="mailto:srichausiripong@gmail.com">srichausiripong@gmail.com</a>
+              <a className="mail" href="mailto:srichausiripong@armsrichau.com">srichausiripong@armsrichau.com</a>
               <div className="contact-btns">
-                <button className="btn btn-accent" type="button" id="copy-email" data-email="srichausiripong@gmail.com">
+                <button className="btn btn-accent" type="button" id="copy-email" data-email="srichausiripong@armsrichau.com">
                   <span className="en">Copy email</span><span className="th" lang="th">คัดลอกอีเมล</span>
                 </button>
                 <a className="btn btn-line-light" href="https://www.linkedin.com/in/siripong-srichau-7107b5147" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
@@ -754,10 +754,10 @@ function Index() {
           <label className="req-label" htmlFor="req-msg"><span className="en">Message</span><span className="th" lang="th">ข้อความ</span></label>
           <textarea id="req-msg" rows={8}></textarea>
           <div className="req-actions">
-            <a className="btn btn-accent" id="req-send" href="mailto:srichausiripong@gmail.com"><span className="en">Open in email</span><span className="th" lang="th">เปิดในแอปอีเมล</span> <span aria-hidden="true">↗</span></a>
+            <a className="btn btn-accent" id="req-send" href="mailto:srichausiripong@armsrichau.com"><span className="en">Open in email</span><span className="th" lang="th">เปิดในแอปอีเมล</span> <span aria-hidden="true">↗</span></a>
             <button className="btn btn-line" type="button" id="req-copy"><span className="en">Copy message</span><span className="th" lang="th">คัดลอกข้อความ</span></button>
           </div>
-          <p className="req-to"><span className="en">To</span><span className="th" lang="th">ถึง</span> srichausiripong@gmail.com · <a href="https://www.linkedin.com/in/siripong-srichau-7107b5147" target="_blank" rel="noopener">LinkedIn ↗</a></p>
+          <p className="req-to"><span className="en">To</span><span className="th" lang="th">ถึง</span> srichausiripong@armsrichau.com · <a href="https://www.linkedin.com/in/siripong-srichau-7107b5147" target="_blank" rel="noopener">LinkedIn ↗</a></p>
         </form>
       </dialog>
 

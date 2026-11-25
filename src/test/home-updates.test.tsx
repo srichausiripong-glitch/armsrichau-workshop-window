@@ -35,4 +35,12 @@ describe("Home page, November 2026 update", () => {
     expect(page.textContent).not.toContain("Open to");
     expect(page.textContent).not.toContain("เปิดรับงาน");
   });
+
+  it("uses the armsrichau.com address for contact", () => {
+    const page = renderHome();
+    expect(page.querySelector("a.mail")?.getAttribute("href")).toBe(
+      "mailto:srichausiripong@armsrichau.com",
+    );
+    expect(page.innerHTML).not.toContain("srichausiripong@gmail.com");
+  });
 });
